@@ -1,0 +1,13 @@
+Run Command Prompt (found under All Programs/Accessories in the Start menu).  Type
+C:\> cd \mywork
+This makes C:\mywork the current directory.
+C:\mywork> dir
+This displays the directory contents.  You should see SumTwoNumbers.java among the files.
+C:\mywork> set path=%path%;C:\Program Files\Java\jdk1.5.0_09\bin
+This tells the system where to find JDK programs.
+C:\mywork> javac SumTwoNumbers.java
+This runs javac.exe, the compiler.  You should see nothing but the next system prompt...
+C:\mywork> dir
+javac has created the SumTwoNumbers.class file.  You should see SumTwoNumbers.java and HelloWorld.class among the files.
+C:\mywork> java SumTwoNumbers
+This runs the Java interpreter.  You should see the program output:
